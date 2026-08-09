@@ -16,7 +16,7 @@ contactForm.addEventListener('submit', function(event) {
       return emailjs.sendForm('service_ixzwrua', 'template_0k0wxik', this);
     }.bind(this))
     .then(function() {
-      alert('Cảm ơn bạn! Tin nhắn đã được gửi thành công và email phản hồi đã được gửi.');
+      alert('Cảm ơn bạn! Tin nhắn đã được gửi thành công. Vui lòng kiểm tra email của bạn, bao gồm cả thư mục Spam.');
       contactForm.reset();
     })
     .catch(function(error) {
